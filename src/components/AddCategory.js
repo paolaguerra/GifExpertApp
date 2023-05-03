@@ -11,19 +11,20 @@ export const AddCategory = (props) => {
     
     const handleSubmit = (event) => {
     event.preventDefault();
+    if (inputValue.trim().length <= 1)  return;
 
-    if (inputValue.trim().length > 2) {
-        props.onSetCategories(cats => [inputValue, ...cats,]);
-        setInputValue('');
-    }
+    // props.onSetCategories(categories => [inputValue, ...categories]);
+    setInputValue('');
+    props.onSetCategories(inputValue.trim() );
     
 }
 
   return (
 
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} aria-label="form">
         <input 
         type="text"
+        placeholder="Buscar gifs"
         value={inputValue}
         onChange={handleImputChange}
         />
