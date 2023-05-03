@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Prueba en <GifGridItem /> debe de hacer match con el snapchot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="Ahsoka"
+      src="https://star-wars.com/ahsoka.jpg"
+    />
+    <p>
+      Ahsoka
+    </p>
+  </div>
+</div>
+`;
