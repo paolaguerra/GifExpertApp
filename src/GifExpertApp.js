@@ -8,7 +8,7 @@ export const GifExpertApp = () => {
 
     return (
       <>
-        <h2>GifExpertApp</h2>
+        <h2>Gif Finder</h2>
         <AddCategory onSetCategories={setCategories}/>
         <hr />
 

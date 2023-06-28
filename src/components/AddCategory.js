@@ -20,7 +20,7 @@ export const AddCategory = (props) => {
     <form onSubmit={handleSubmit} aria-label="form">
       <input
         type="text"
-        placeholder="Buscar gifs"
+        placeholder="search gif"
         value={inputValue}
         onChange={handleImputChange}
       />
